@@ -1,0 +1,8 @@
+DirectoryIndex landing.php index.php
+
+# Enable URL rewriting
+RewriteEngine On
+
+# Redirect old index.php to landing.php
+RewriteCond %{REQUEST_FILENAME} index.php
+RewriteRule ^index\.php$ landing.php [L,R=301]
